@@ -30,6 +30,10 @@ void draw() {
   // ticker: integer rep of mouse Y pos rel to screen size
   ticker = int(map(mouseY, 0, height, num_polys-1, 0));
   
+  // fix for mouse pos off app area
+  ticker = max(0, ticker);
+  ticker = min (height, ticker);
+  
   //for (int i=ticker - 1; i>-1; i--){
   //  //int shade = int(map(cos(PI*i/(2*num_polys)), 0, 1, 0, 255));
   //  poly_list[i].display(width/2, 5*height/6, 255);
