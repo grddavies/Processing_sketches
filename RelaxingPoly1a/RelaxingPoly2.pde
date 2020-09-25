@@ -1,5 +1,5 @@
 // Max number of edges in polygon
-int edge_lim = 38;
+int edge_lim = 70;
 // Length of polygon edges
 int edge_len = 60;
 // Number of points per edge for lerp
