@@ -6,7 +6,7 @@ class RegPoly {
   int n;
   // Shape obj
   PShape s;
-  int stroke_weight = 3;
+  int stroke_weight = 4;
   int stroke_shade = 255;
   // Midpoint of bottom edge
   float x, y;
